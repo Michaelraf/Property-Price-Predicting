@@ -72,7 +72,7 @@ submit.addEventListener('click', (e) => {
   // Fetching data and await for response
   (async () => {
 
-    const rawResponse = await fetch('http://192.168.0.165:3000', {
+    const rawResponse = await fetch('/', {
       method: 'POST',
       headers: {
         'Accept': 'application/json',
