@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Web site to predict the price of the house">
+	<meta name="author"      content="Our Group">
+	
+	<title>Predict - Prediction </title>
+
+	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
+	
+	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+	<!-- style -->
+	<link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen" >
+	<link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+
+<body>
+	<!-- Navbar -->
+	<div class="navbar navbar-inverse navbar-fixed-top headroom" >
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.html">Logo</a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav pull-right">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li class="active"><a href="#">Predict</a></li>
+				</ul>
+			</div>
+		</div>
+	</div> 
+	<!-- /.Navbar -->
+
+
+	<header id="head" class="secondary"></header>
+
+	<!-- container -->
+	<div class="container">
+
+		<ol class="breadcrumb">
+			<li><a href="index.html">Home</a></li>
+			<li class="active">Predict</li>
+		</ol>
+
+		<div class="row">
+			
+			<!-- Article main content -->
+			<article class="col-xs-12 maincontent">
+				<header class="page-header">
+					<h1 class="page-title">Prediction</h1>
+				</header>
+				
+				<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<h3 class="thin text-center">Enter information about the property</h3>
+							<hr>
+							
+							<form action="" name = "myForm">
+								<div class="top-margin">
+									<label>Type of property</label>
+									<select name="typeOfProperty" class="form-control">
+										<option value="House">House</option>
+										<option value="Apartment / Flat">Apartment / Flat</option>
+										<option value="Townhouse">Townhouse</option>
+										<option value="Commercial Property">Commercial Property</option>
+										<option value="Farm">Farm</option>
+										<option value="Vacant Land / Plot">Vacant Land / Plot</option>
+										<option value="Industrial Property">Industrial Property</option>
+									</select>
+								</div>
+								<div class="top-margin">
+									<label>Erf Size</label>
+									<input name="erfSize" type="number" min="0" class="form-control" placeholder="Erf Size (m2)" value = 0>
+								</div>
+								<div class="top-margin">
+									<label>Floor Size</label>
+									<input name="floorSize" type="number" min="0" class="form-control" placeholder="Floor Size (m2)">
+								</div>
+								<div class="top-margin">
+									<label>Bedrooms</label>
+									<input name="bedrooms" type="number" min="0" class="form-control" placeholder="Bedrooms">
+								</div>
+								<div class="top-margin">
+									<label>Bathrooms</label>
+									<input name="bathrooms" type="number" min="0" class="form-control" placeholder="Bathrooms">
+								</div>
+								<div class="top-margin">
+									<label>Rates and Taxes</label>
+									<input name="ratesAndTaxes" type="number" min="0" class="form-control" placeholder="Rate and Taxes">
+								</div>
+								<div class="top-margin">
+									<label>Pets Allowed</label>
+									<select name="petsAllowed" class="form-control">
+										<option value="0">No</option>
+										<option value="1">Yes</option>
+									</select>
+								</div>
+								<div class="top-margin">
+									<label>Garage description</label>
+									<select name="garage" class="form-control" multiple size="2">
+										<option value="Single">Single</option>
+										<option value="Double">Double</option>
+										<option value="Covered">Covered</option>
+										<option value="Electric Door">Electric Door</option>
+										<option value="Roll up">Roll up</option>
+										<option value="Tandem">Tandem</option>
+										<option value="Hollywood Garage">Hollywood Garage</option>
+										<option value="Exposed">Exposed</option>
+										<option value="Double parking">Double parking</option>
+									</select>
+								</div>
+								<div class="top-margin">
+									<label>Garden description</label>
+									<select name="garden" class="form-control" multiple size="2">
+										<option value="Landscaped garden">Landscaped garden</option>
+										<option value="Garden Services">Garden Services</option>
+										<option value="Landscaped">Landscaped</option>
+										<option value="Zen Garden">Zen Garden</option>
+										<option value="Sculpture">Sculpture</option>
+										<option value="Neat garden">Neat garden</option>
+										<option value="Big lawn area">Big lawn area</option>
+										<option value="Water Feature">Water Feature</option>
+										<option value="Steep Garden">Steep Garden</option>
+									</select>
+								</div>
+								<div class="top-margin">
+									<label>Pool description</label>
+									<select name="pool" class="form-control" multiple size="2">
+										<option value="Pool">Pool</option>
+										<option value="Heated">Heated</option>
+										<option value="Salt pool">Salt pool</option>
+										<option value="Chlorine">Chlorine</option>
+										<option value="Splash">Splash</option>
+										<option value="Safety Net">Safety Net</option>
+										<option value="Swimming pool">Swimming pool</option>
+										<option value="Gunite in Ground">Gunite in Ground</option>
+										<option value="Communal Pool">Communal Pool</option>
+									</select>
+								</div>
+								<div class="top-margin">
+									<label>Internet Access</label>
+									<select name="internetAccess" class="form-control" multiple size="2">
+										<option value="Fibre">Fibre</option>
+										<option value="Satellite">Satellite</option>
+										<option value="ADSL">ADSL</option>
+										<option value="Dial-up">Dial-up</option>
+										<option value="ISDN">ISDN</option>
+										<option value="VDSL">VDSL</option>
+										<option value="Fixed WiMax">Fixed WiMax</option>
+									</select>
+								</div>
+								<div class="top-margin">
+									<label>Description</label>
+									<select name="_description" class="form-control" multiple size="2">
+										<option value="New Development">New Development</option>
+										<option value="Freestanding">Freestanding</option>
+										<option value="Second floor and above">Second floor and above</option>
+										<option value="Top Floor">Top Floor</option>
+										<option value="Live Stock Farm">Live Stock Farm</option>
+										<option value="Bachelor/Studio">Bachelor/Studio</option>
+										<option value="Office">Office</option>
+									</select>
+								</div>
+								<div class="top-margin">
+									<label>Kitchens</label>
+									<input name="kitchens" type="number" min="0" class="form-control" placeholder="Kitchens">
+								</div>
+								<div class="top-margin">
+									<label>Lounges</label>
+									<input name="lounges" type="number" min="0" class="form-control" placeholder="Lounges">
+								</div>
+								<div class="top-margin">
+									<label>Dining Rooms</label>
+									<input name="diningRooms" type="number" min="0" class="form-control" placeholder="Dining Rooms">
+								</div>
+								<div class="top-margin">
+									<label>Security</label>
+									<select name="security" class="form-control" multiple size="2">
+										<option value="Alarm System">Alarm System</option>
+										<option value="Security Gate">Security Gate</option>
+										<option value="Electric fencing">Electric fencing</option>
+										<option value="Intercom">Intercom</option>
+										<option value="Guard">Guard</option>
+										<option value="Totally Fenced">Totally Fenced</option>
+									</select>
+								</div>
+								<div class="top-margin">
+									<label>Nearby public transport</label>
+									<select name="nearbyPublicTransport" class="form-control" multiple size="2">
+										<option value="Bus">Bus</option>
+										<option value="Minibus Taxi">Minibus Taxi</option>
+										<option value="Train">Train</option>
+									</select>
+								</div>
+								<div class="top-margin">
+									<label>Kitchen</label>
+									<select name="kitchen" class="form-control" multiple size="2">
+										<option value="Breakfast Nook">Breakfast Nook</option>
+										<option value="Open Plan">Open Plan</option>
+										<option value="Laundry">Laundry</option>
+										<option value="Built-in Cupboards">Built-in Cupboards</option>
+										<option value="Gas Hob">Gas Hob</option>
+										<option value="Tiled Floors">Tiled Floors</option>
+										<option value="Fridge">Fridge</option>
+										<option value="extractor fan">extractor fan</option>
+										<option value="Pantry">Pantry</option>
+									</select>
+								</div>
+								<div class="top-margin">
+									<label>Lounge description</label>
+									<select name="lounge" class="form-control" multiple size="2">
+										<option value="Tiled Floors">Tiled Floors</option>
+										<option value="Curtain Rails">Curtain Rails</option>
+										<option value="TV Port">TV Port</option>
+										<option value="Top Floor">Top Floor</option>
+										<option value="Open Plan">Open Plan</option>
+										<option value="Under Floor Heating">Under Floor Heating</option>
+										<option value="Telephone Port">Telephone Port</option>
+									</select>
+								</div>
+								<div class="top-margin">
+									<label>Dining room description</label>
+									<select name="diningRoom" class="form-control" multiple size="2">
+										<option value="Open Plan">Open Plan</option>
+										<option value="Parquet Floors">Parquet Floors</option>
+										<option value="Laminated Floors">Laminated Floors</option>
+										<option value="Wooden Floors">Wooden Floors</option>
+										<option value="Tiled Floors">Tiled Floors</option>
+										<option value="Curtain Rails">Curtain Rails</option>
+										<option value="Spacious">Spacious</option>
+									</select>
+								</div>
+								<div class="top-margin">
+									<label>Domestic Rooms</label>
+									<input name="domesticRooms" type="number" min="0" class="form-control" placeholder="Domestic Rooms">
+								</div>	
+								<div class="top-margin">
+									<label>Reception Rooms</label>
+									<input name="receptionRooms" type="number" min="0" class="form-control" placeholder="Reception Rooms">
+								</div>	
+
+								<hr>
+								<div class="row" >
+									<div class="col-lg-8">
+									</div>
+									<div class="col-lg-4 text-right">
+										<button class="btn btn-action submit" type="submit">Predict</button>
+									</div>
+								</div>
+							</form>
+							<p class="loading_img"><img src="./assets/images/spinner-1.3s-200px.svg" alt="loading"></p>
+							<div class="row" style="width: 100%; text-align: center;">
+								<div class="col-lg-8">
+								</div>
+								<p name="result" class="result" style="text-align: center;font-size: 1.6em;"></p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				
+			</article>
+			<!-- /Article -->
+
+		</div>
+	</div>	
+	
+
+	<!-- Footer -->
+	<footer id="footer" class="top-space">
+
+		<div class="footer1">
+			<div class="container">
+				<div class="row">
+					
+					<div class="col-md-3 widget">
+						<h3 class="widget-title">Contact</h3>
+						<div class="widget-body">
+							<p>+261 34 23 756 17<br>
+								<a href="mailto:#">rasoanomenjanaharyalphonsine@gmail.com</a><br>
+								<br>
+								Antananarivo, Madagascar.
+							</p>	
+						</div>
+					</div>
+
+					<div class="col-md-3 widget">
+						<h3 class="widget-title">Follow me</h3>
+						<div class="widget-body">
+							<p class="follow-me-icons">
+								<a href=""><i class="fa fa-facebook fa-2"></i></a>							
+								<a href=""><i class="fa fa-github fa-2"></i></a>
+								<a href=""><i class="fa fa-linkedin fa-2"></i></a>
+							</p>	
+						</div>
+					</div>
+
+					<div class="col-md-6 widget">
+						<h3 class="widget-title">Text</h3>
+						<div class="widget-body">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, dolores, quibusdam architecto voluptatem amet fugiat nesciunt placeat provident cumque accusamus itaque voluptate modi quidem dolore optio velit hic iusto vero praesentium repellat commodi ad id expedita cupiditate repellendus possimus unde?</p>
+							<p>Eius consequatur nihil quibusdam! Laborum, rerum, quis, inventore ipsa autem repellat provident assumenda labore soluta minima alias temporibus facere distinctio quas adipisci nam sunt explicabo officia tenetur at ea quos doloribus dolorum voluptate reprehenderit architecto sint libero illo et hic.</p>
+						</div>
+					</div>
+
+				</div> 
+			</div>
+		</div>
+
+		<div class="footer2">
+			<div class="container">
+				<div class="row">
+					
+					<div class="col-md-6 widget">
+						<div class="widget-body">
+							<p class="simplenav">
+								<a href="#">Home</a> | 
+								<a href="about.html">About</a> |
+								<a href="contact.html">Contact</a> |
+							</p>
+						</div>
+					</div>
+
+					<div class="col-md-6 widget">
+						<div class="widget-body">
+							<p class="text-right">Copyright &copy; 2022, Misa Madagascar</p>
+						</div>
+					</div>
+
+				</div> 
+			</div>
+		</div>
+	</footer>
+	<!-- /footer -->	
+
+	<!-- JavaScript -->
+	<script src="./javascript/script.js" type = "text/javascript"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
