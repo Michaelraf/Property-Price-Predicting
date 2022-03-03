@@ -58,7 +58,7 @@ app.post('/', (req, res)=>{
 })
 app.use(router);
 
-server.listen(port, ()=>{
+server.listen(portprocess.env.PORT || port, ()=>{
     console.log("App runing on PORT : " + port);
     
 })
